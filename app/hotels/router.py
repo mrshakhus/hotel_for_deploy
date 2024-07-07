@@ -8,8 +8,6 @@ from pydantic import EmailStr, TypeAdapter
 from app.exceptions import MoreThan30DaysException, WrongDatesException
 from app.hotels.dao import HotelDAO
 from app.hotels.schemas import SHotels
-from app.tasks.dao import BookingTaskDAO
-from app.tasks.email_templates import create_booking_notification_template
 from app.config import settings
 
 
